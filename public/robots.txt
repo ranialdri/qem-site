@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://qem-qassi-entretien-m-nager-nettoyage-r-sidentiel.ai.studio/sitemap.xml

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-qem-gold: #C59B27;
+  --color-qem-gold-light: #DFB84C;
+  --color-qem-gold-dark: #9E7A19;
+  --color-qem-black: #0F0F10;
+  --color-qem-charcoal: #18181B;
+  --color-qem-canvas: #FAF9F6;
+  --color-qem-surface: #F3F2EE;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #0F0F10;
+    background-color: #FAF9F6;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
